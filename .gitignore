@@ -1,0 +1,6 @@
+pages/__init__.py
+blog/__pycache__
+pages/__pycache__
+blog/__init__.py
+pages/migrations/__pycache__
+pages/migrations/__init__.py
