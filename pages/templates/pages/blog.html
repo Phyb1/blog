@@ -1,0 +1,7 @@
+{% extends 'pages/base.html' %}
+{% block title %}{{blog.title}}{% endblock title %}
+{% block content %}
+<h3>{{blog.title}}</h3>
+<p>Written by {{blog.author}}</p>
+<p>{{blog.text}}</p>
+{% endblock content %}

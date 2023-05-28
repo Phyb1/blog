@@ -5,7 +5,7 @@
     {% for blog in blogs %}
     <ul>
         <li>{{blog.title}} by {{blog.author}}</li>
-        <li>{{blog.text|slice:'300'}}...<a href=''>Read more</a></a></li>
+        <li>{{blog.text|slice:'300'}}...<a href='{% url "pages:blog" blog.id %}'>Read more</a></a></li>
     </ul>
     {% endfor %}
 </ul>
