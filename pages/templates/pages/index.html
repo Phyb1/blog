@@ -1,0 +1,12 @@
+{% extends 'pages/base.html' %}
+{% block title %}blogs{% endblock title %}
+{% block content %}
+<ul>
+    {% for blog in blogs %}
+    <ul>
+        <li>{{blog.title}} by {{blog.author}}</li>
+        <li>{{blog.text|slice:'300'}}...<a href=''>Read more</a></a></li>
+    </ul>
+    {% endfor %}
+</ul>
+{% endblock content %}
