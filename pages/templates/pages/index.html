@@ -1,6 +1,7 @@
 {% extends 'pages/base.html' %}
 {% block title %}blogs{% endblock title %}
 {% block content %}
+<h3>Welcome to blogs </h3>
 <ul>
     {% for blog in blogs %}
     <ul>
@@ -9,4 +10,5 @@
     </ul>
     {% endfor %}
 </ul>
+<p><a href="{% url 'pages:blog_add' %}">Add new blog</a></p>
 {% endblock content %}
