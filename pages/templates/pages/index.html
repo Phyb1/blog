@@ -7,8 +7,12 @@
     <ul>
         <li>{{blog.title}} by {{blog.author}}</li>
         <li>{{blog.text|slice:'300'}}...<a href='{% url "pages:blog" blog.id %}'>Read more</a></a></li>
+        <li>
+            <img src="{{ blog.image.url }}">
     </ul>
     {% endfor %}
 </ul>
 <p><a href="{% url 'pages:blog_add' %}">Add new blog</a></p>
+{% include 'pages/pagination.html' %} {# includes the template #}
+
 {% endblock content %}
